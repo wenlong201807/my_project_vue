@@ -67,3 +67,6 @@ reset.css中
 ### 任何配置项的修改，都需要重新启动服务
 
 > $ npm run dev || npm run start
+
+
+added the demo for  pull

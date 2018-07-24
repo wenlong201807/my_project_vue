@@ -47,3 +47,23 @@ fastClick.attach(document.body)
 ### 小图标使用阿里云字体库（fist_project_vue）
 
 - [阿里云字体库](http://www.iconfont.cn/manage/index?spm=a313x.7781069.1998910419.11&manage_type=myprojects&projectId=761001)
+
+### css 样式使用[stylus](https://stylus.bootcss.com/)
+
+```
+> $ npm install stylus --save
+> $ npm install stylus-loader --save
+```
+
+### 在 vue 中使用 sass 的配置的[方法教程](https://blog.csdn.net/lily2016n/article/details/75309492)
+
+### 单位转换
+
+```
+reset.css中
+1rem  = html(font-size =50px)
+```
+
+### 任何配置项的修改，都需要重新启动服务
+
+> $ npm run dev || npm run start

@@ -68,5 +68,6 @@ reset.css中
 
 > $ npm run dev || npm run start
 
-
-added the demo for  pull
+added the demo for pull
+$ git push origin index-swiper:index-swiper
+git push (自己取的远程名字) 本地：远程

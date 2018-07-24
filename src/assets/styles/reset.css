@@ -1,226 +1,194 @@
-/*
-这个是通用的  css reset.这个版本适用于 移动端页面
-如果需要在 PC端使用，可以 修改 html{font-size: 10px;}为html{font-size: 12px;}
-其他地方不需要修改
-*/
-/* ========================================= */
 @charset "utf-8";
-html,
+html {
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+}
 body,
-div,
-span,
-applet,
-object,
-iframe,
+ul,
+ol,
+dl,
+dd,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+figure,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
 p,
 blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
 th,
-td {
+td,
+pre,
+xmp {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
 }
-
-html {
-  font-family: 'sans-serif', 'Microsoft YaHei', '微软雅黑', 'Tahoma',
-    'Helvetica';
-  font-size: 50px;
-
-  background: #fff;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-img {
-  border: 0;
-  max-width: 100% !important;
-  vertical-align: middle;
-}
-
-address,
-caption,
-cite,
+body,
+input,
+textarea,
+button,
+select,
+pre,
+xmp,
+tt,
 code,
-dfn,
-i,
-em,
-strong,
-th,
-var {
-  font-weight: normal;
-  font-style: normal;
+kbd,
+samp {
+  line-height: 1.5;
+  font-family: tahoma, arial, 'Hiragino Sans GB', simsun, sans-serif;
 }
-
-ol,
-ul {
-  list-style: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small,
+big,
+input,
+textarea,
+button,
+select {
+  font-size: 100%;
 }
-
-a {
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  outline: none;
-}
-
-caption,
-th {
-  text-align: left;
-  font-weight: normal;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: tahoma, arial, 'Hiragino Sans GB', '微软雅黑', simsun, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
   font-weight: normal;
-  font-size: 100%;
 }
-
-q:before,
-q:after {
-  content: ”;
+address,
+cite,
+dfn,
+em,
+i,
+optgroup,
+var {
+  font-style: normal;
 }
-
-abbr,
-acronym {
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+caption,
+th {
+  text-align: inherit;
+}
+ul,
+ol,
+menu {
+  list-style: none;
+}
+fieldset,
+img {
   border: 0;
 }
-
-button,
+img,
+object,
 input,
-optgroup,
-select,
-textarea {
-  margin: 0;
-  font: inherit;
-  color: inherit;
+textarea,
+button,
+select {
+  vertical-align: middle;
 }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:before,
-:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-input[type='search']::-webkit-search-cancel-button,
-input[type='search']::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
 article,
 aside,
-details,
-figcaption,
-figure,
 footer,
 header,
-hgroup,
-nav,
 section,
-summary {
+nav,
+figure,
+figcaption,
+hgroup,
+details,
+menu {
   display: block;
 }
-
-/* 此代码段是为了在不同分辨率手机上，字体缩放  */
-@media screen and (min-width: 100px) {
-  /*  iPhone 4,5 */
-  html {
-    font-size: 10px;
-  }
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
-@media screen and (min-width: 320px) {
-  /*  iPhone 4,5 */
-  html {
-    font-size: 10px;
-  }
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '\0020';
 }
-@media screen and (min-width: 375px) {
-  /*  iPhone 6 */
-  html {
-    font-size: 12px;
-  }
+textarea {
+  overflow: auto;
+  resize: vertical;
 }
-@media screen and (min-width: 414px) {
-  /*  iPhone 6 plus */
-  html {
-    font-size: 12px;
-  }
+input,
+textarea,
+button,
+select,
+a {
+  outline: 0 none;
+  border: none;
 }
-@media screen and (min-width: 600px) {
-  html {
-    font-size: 14px;
-  }
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
 }
-
-/* 此代码段是为了在不同分辨率手机上，字体缩放  */
+mark {
+  background-color: transparent;
+}
+a,
+ins,
+s,
+u,
+del {
+  text-decoration: none;
+}
+sup,
+sub {
+  vertical-align: baseline;
+}
+html {
+  overflow-x: hidden;
+  height: 100%;
+  font-size: 50px;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: Arial, 'Microsoft Yahei', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 0.28em;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}
+hr {
+  height: 0.02rem;
+  margin: 0.1rem 0;
+  border: medium none;
+  border-top: 0.02rem solid #cacaca;
+}
+a {
+  color: #25a4bb;
+  text-decoration: none;
+}

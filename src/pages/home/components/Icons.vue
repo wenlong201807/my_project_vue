@@ -1,5 +1,5 @@
 <template>
-  <swiper>
+  <swiper :options="swiperOption">
     <swiper-slide>
       <div class="icons_wrap">
         <ul class="icons">
@@ -29,6 +29,9 @@ export default {
   name: 'HomeIcons',
   data () {
     return {
+      swiperOption: {
+        autoplay: false
+      },
       iconlist: [
         {src: '../../../../static/icons/audio.png', title: '录像'},
         {src: '../../../../static/icons/caran.png', title: '拍摄'},
@@ -39,6 +42,19 @@ export default {
         {src: '../../../../static/icons/pc.png', title: '电脑'},
         {src: '../../../../static/icons/person.png', title: '人事'}
       ]
+    }
+  },
+  computed: {
+    pages () { // 分页显示功能
+      const pages = []
+      this.recommendlist.forEach((item, index) => {
+        const page = Math.floor(index / 4)
+        if (!pages[page]) {
+          pages[page] = []
+        }
+        pages[page].push(item)
+      })
+      return pages
     }
   }
 }

@@ -6,11 +6,18 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // 更改配置代理，发送后数据webpack-dev-server
+      '/api': {
+        target: 'http://192.168.0.124:8181',
+        pathRewrite: {
+          '^/api': '/static/mock'
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: '192.168.0.124', // can be overwritten by process.env.HOST

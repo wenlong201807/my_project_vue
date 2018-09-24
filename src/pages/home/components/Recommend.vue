@@ -2,7 +2,9 @@
   <div class="recommend_wrap">
     <h2 class="title">畅销推荐</h2>
     <ul class="list_wrap">
+      <!-- <template v-for="(page,index) in pages" :key="index"> -->
       <li class="item" v-for="(item) in recommendlist" :key="item.id">
+        <!-- <li class="item" v-for="item in page" :key="item.id"> -->
         <img class="item_img" :src="item.src" alt="" title="item.title">
         <div class="item_content">
           <h3 class="con_title">{{item.title}}</h3>
@@ -13,6 +15,7 @@
           </p>
         </div>
       </li>
+      <!-- </template> -->
     </ul>
   </div>
 </template>
@@ -22,9 +25,7 @@ export default {
   name: 'Homerecommend',
   data () {
     return {
-      recommendlist: [
-
-      ]
+      recommendlist: []
     }
   },
   created () {
@@ -37,6 +38,9 @@ export default {
       this.recommendlist = data
       // console.log(this.recommendlist)
     }
+  },
+  computed: {
+
   }
 }
 </script>

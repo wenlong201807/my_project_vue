@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption">
+    <swiper :options="swiperOption" v-if="showSwiper">
       <!-- slides -->
       <swiper-slide v-for="item  of swiperList" :key="item.id">
         <img class="swiper-img" :src="item.imgUrl" alt="图片不显示，我显示">
@@ -33,6 +33,11 @@ export default {
           imgUrl: 'https://source.qunarzz.com/site/images/wap/home/recommend/iphoneplus/anquan_20180716.png'
         }
       ]
+    }
+  },
+  computed: {
+    showSwiper () {
+      return this.swiperList.length
     }
   }
 }

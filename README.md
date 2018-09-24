@@ -73,3 +73,13 @@ $ git push origin index-swiper:index-swiper
 git push (自己取的远程名字) 本地：远程
 
 ### [vue 中配置 less 教程](https://www.jianshu.com/p/ef09ef7293c2)
+
+### git 合并操作
+
+- 添加 git add ./
+- 提交 git commit -m 'add something'
+- 分支推送 git push(只是将本地的 index-recommend 分支与远程的 index-recommend 分支合并)
+- 切换主分支 git checkout master
+- `合并分支到本地主分支中 git merge index-recommend(重点)[将本地的 index-recommend 分支的内容与远程的主分支的内容合并]`
+- 再推送到远程的主分支上 git push
+- 完整操作结束

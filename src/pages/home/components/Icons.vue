@@ -30,7 +30,7 @@ export default {
   data () {
     return {
       iconlist: [
-        {src: '../../../../static/icons/audio.png', title: '录像,文字太多了后面的会隐藏'},
+        {src: '../../../../static/icons/audio.png', title: '录像'},
         {src: '../../../../static/icons/caran.png', title: '拍摄'},
         {src: '../../../../static/icons/content.png', title: '选择目的'},
         {src: '../../../../static/icons/download.png', title: '出发'},
@@ -62,6 +62,7 @@ export default {
   .icon {
     flex: 1 0 25%;
     text-align: center;
+    min-width: 20px;
     // 超出文字隐藏效果，以三个点显示
     .ellipse(); // less
     //ellipse(); // stylus

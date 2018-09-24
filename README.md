@@ -1,6 +1,6 @@
-# vue_single_page
+# my_project_vue
 
-> A Vue.js project
+> A Vue.js project which mock where_go
 
 ## Build Setup
 
@@ -8,7 +8,7 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8085
 npm run dev
 
 # build for production with minification
@@ -71,3 +71,5 @@ reset.css中
 added the demo for pull
 $ git push origin index-swiper:index-swiper
 git push (自己取的远程名字) 本地：远程
+
+### [vue 中配置 less 教程](https://www.jianshu.com/p/ef09ef7293c2)
